@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value="/coupon")
 @SuppressWarnings({"unchecked", "rawtypes"})
 public class CouponController {
-	aaa
+	
 
 }
 
