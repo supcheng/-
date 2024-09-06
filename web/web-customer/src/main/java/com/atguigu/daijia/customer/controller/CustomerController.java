@@ -22,7 +22,7 @@ public class CustomerController {
     private CustomerService customerService;
     @Operation(summary = "小程序授权登录")
     @GetMapping("/login/{code}")
-    public Result<Long> login(@PathVariable String code){
+    public Result<String> login(@PathVariable String code){
         return  Result.ok(customerService.login(code));
     }
 }
