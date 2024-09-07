@@ -15,7 +15,7 @@ public class WxConfigOperator {
     public WxMaService wxMaService(){
         WxMaDefaultConfigImpl wxMaDefaultConfig=new WxMaDefaultConfigImpl();
         wxMaDefaultConfig.setAppid(wxConfigProperties.getAppId());
-        wxMaDefaultConfig.setAppid(wxConfigProperties.getSecret());
+        wxMaDefaultConfig.setSecret(wxConfigProperties.getSecret());
         WxMaService service=new WxMaServiceImpl();
         service.setWxMaConfig(wxMaDefaultConfig);
         return service;
